@@ -4,6 +4,7 @@ import java.util.Scanner;
 /**
  * Clase principal, interactua con el usuario y muestra el menú de opciones
  * para interactuar con la clase BuscaAmigos.
+ * 
  * @author Cynthia L. Sánchez
  * @version 1.0
  */
@@ -66,7 +67,8 @@ public class ClasePrincipal {
                 if (posiblesAmigos.isEmpty()) {
                     System.out.println(RED + "No se encontraron amigos que compartan gustos T-T" + RESET);
                 } else {
-                    System.out.println(BOLD + BLUE + "Posibles amigos de " + personab + RESET);
+                    System.out.println(BOLD + BLUE + "Posibles amigos de " +
+                            personab + " con gustos similares" + RESET);
                     for (String amigo : posiblesAmigos) {
                         System.out.println(amigo);
                     }
