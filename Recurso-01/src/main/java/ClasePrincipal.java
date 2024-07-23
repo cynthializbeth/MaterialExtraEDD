@@ -319,7 +319,7 @@ public class ClasePrincipal {
      * 
      * @return entero, el número entero ingresado.
      */
-    public static int verificaEntero() {
+    private static int verificaEntero() {
         try {
             return Integer.parseInt(entrada.nextLine());
         } catch (NumberFormatException e) {
@@ -333,7 +333,7 @@ public class ClasePrincipal {
      * 
      * @return decimal, el número decimal ingresado.
      */
-    public static double verificaDouble() {
+    private static double verificaDouble() {
         try {
             return Double.parseDouble(entrada.nextLine());
         } catch (NumberFormatException e) {

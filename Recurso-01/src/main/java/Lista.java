@@ -77,9 +77,11 @@ public class Lista<E> implements List<E> {
          * @return el siguiente elemento.
          */
         public E next() {
+            // Verifica si hay un siguiente elemento
             if (!hasNext()) {
                 throw new NoSuchElementException("No hay siguiente elemento");
             }
+            // Si lo hay obtenemos el siguiente elemento y nos movemos al siguiente nodo
             E e = actual.elemento;
             actual = actual.siguiente;
             return e;
@@ -100,10 +102,13 @@ public class Lista<E> implements List<E> {
      * @param e, el elemento a agregar.
      */
     public void agrega(E e) {
+        // Si no hay elementos en la lista, el nuevo nodo será la cabeza y la cola
         if (cabeza == null) {
             cabeza = new Nodo(e);
             cola = cabeza;
         } else {
+            // Si ya hay elementos en la lista, el nuevo nodo será el siguiente de la cola
+            // y la cola será el nuevo nodo
             Nodo nuevo = new Nodo(e);
             cola.siguiente = nuevo;
             cola = nuevo;
@@ -152,9 +157,11 @@ public class Lista<E> implements List<E> {
      * @return el elemento en la posición index.
      */
     public E obtiene(int index) {
+        // Verifica si el índice está dentro de los límites de la lista
         if (index < 0 || index >= tamaño) {
             throw new IndexOutOfBoundsException("Indice fuera de rango, el indice debe ser mayor o igual a 0 y menor que" + tamaño);
         }
+        // Obtenemos el elemento en la posición index
         Nodo aux = cabeza;
         for (int i = 0; i < index; i++) {
             aux = aux.siguiente;
