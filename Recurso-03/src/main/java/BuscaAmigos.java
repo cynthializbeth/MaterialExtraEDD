@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Clase busca amigos, usa una estrutura hashmap para almacener las personas y
@@ -11,7 +13,8 @@ import java.util.List;
  */
 public class BuscaAmigos {
     /* Tabla hash con relación (gusto, personas) */
-    private HashMap<String, ArrayList<String>> gustos = new HashMap<String, ArrayList<String>>();
+    private Map<String, List<String>> gustos = new HashMap<String, List<String>>();
+    //private Map<String, List<String>> gustos = new Hashtable<String, List<String>>();
 
     /**
      * Agrega un gusto a la tabla hash.
