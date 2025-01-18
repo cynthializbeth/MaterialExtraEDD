@@ -88,8 +88,9 @@
 \author{Ayudante: Cynthia Lizbeth Sánchez Urbano}
 \date{Ejercicios de práctica para calcular la complejidad basándose en el código.}
 \maketitle
+Observa los siguientes métodos y responde cuál es la complejidad en tiempo y en espacio de cada uno.
 \begin{enumerate}
-\item Observa el siguiente código:
+\item Imprime Pares
 \begin{lstlisting}
 public void imprimePares(int n) {
     for (int i = 0; i < n; i++) {
@@ -99,9 +100,7 @@ public void imprimePares(int n) {
     }
 }
 \end{lstlisting}
-¿Cuál es la complejidad del algoritmo en tiempo y por qué?
-¿Cuál es la complejidad del algoritmo en espacio y por qué?
-\item
+\item Busca Alumno
 \begin{lstlisting}
 public void buscaAlumno(String nombre) {
     String[] arreglo = { "Anna Sánchez", "Julio Lozano", ..., "Óscar López"};
@@ -113,9 +112,7 @@ public void buscaAlumno(String nombre) {
     System.err.println("Alumno no encontrado");
 }
 \end{lstlisting}
-¿Cuál es la complejidad del algoritmo en tiempo y por qué?
-¿Cuál es la complejidad del algoritmo en espacio y por qué?
-\item
+\item BubbleSort
 \begin{lstlisting}
  public int[] bubbleSort(int[] arreglo) {
      for (int i = 1; i < arreglo.length; i++) {
@@ -130,9 +127,7 @@ public void buscaAlumno(String nombre) {
      return arreglo;
 }
 \end{lstlisting}
-¿Cuál es la complejidad del algoritmo en tiempo y por qué?
-¿Cuál es la complejidad del algoritmo en espacio y por qué?
-\item 
+\item Factorial
 \begin{lstlisting}
   public static int factorial(int n) {
       if (n < 0) {
@@ -148,9 +143,7 @@ public void buscaAlumno(String nombre) {
       return n * auxFactorial(n - 1);
   }
 \end{lstlisting}
-¿Cuál es la complejidad del algoritmo en tiempo y por qué?
-¿Cuál es la complejidad del algoritmo en espacio y por qué?
-\item
+\item Promedio
 \begin{lstlisting}
   public static double promedio(double[] arreglo) {
       double suma = 0;
@@ -160,7 +153,5 @@ public void buscaAlumno(String nombre) {
       return suma / arreglo.length;
   }
 \end{lstlisting}
-¿Cuál es la complejidad del algoritmo en tiempo y por qué?
-¿Cuál es la complejidad del algoritmo en espacio y por qué?
 \end{enumerate}
 \end{document}
