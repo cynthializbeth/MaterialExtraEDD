@@ -1,0 +1,77 @@
+\documentclass[12pt]{article} % Tamaño de letra
+\usepackage[utf8]{inputenc} % Simbolo utf8
+\usepackage[light]{antpolt} % Tipo de letra
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel} % Español 
+\usepackage[dvipsnames]{xcolor} % Paquete de colores
+\usepackage{amsmath} % Paquete de simbolos matematicos
+\usepackage{halloweenmath} % Paquete de Halloween
+\usepackage{amssymb} % therefore 
+\usepackage{amsfonts}  % Alinear
+\usepackage{mathtools} 
+\usepackage{hyperref} % Hiperreferencias
+\usepackage{xurl} % Romper url largos en más líneas
+\usepackage{graphicx}
+\usepackage{caption} % Paquete para personalizar las captions
+\usepackage{tikz} % Dibujos arreglo
+\usepackage{graphics}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage{listings} % Código
+\usepackage[shortlabels]{enumitem}
+\usepackage{bbm}
+\usepackage{multirow, array} % para las tablas
+\usepackage{float}
+\usepackage{color}
+\usepackage{tabularray}
+\usepackage{fancyhdr}
+\usepackage{pifont}%Simbolos especiales.
+\usepackage{fancybox}%Para crear cajas (Notas).
+\usepackage[margin=1in]{geometry}
+\usepackage[margin=1.1in]{caption}
+\pagestyle{fancy}
+\fancypagestyle{plain}{
+\fancyhf{}\fancyhead[L]{\includegraphics[height=0.5in]{unam.png}}
+\fancyhead[R]{\includegraphics[height=0.5in]{ciencias.png}}
+}
+
+%----------[ Declaración Respuesta ]-----------
+\usepackage{framed,xcolor} % Color de repuesta
+
+\newenvironment{respuesta}{
+    \definecolor{shadecolor}{RGB}{236,236,228}
+    \begin{snugshade*}
+    \vspace*{2mm}}
+    {\vspace*{2mm}
+    \end{snugshade*}}
+
+%------------------------------
+\definecolor{fondo}{RGB}{234, 236, 238}% Definición del color fondo
+
+\lstset{
+    language=[Sharp]C,
+    basicstyle=\ttfamily\footnotesize, % Cambiar el tamaño de la fuente
+    keywordstyle=\color{blue},
+    commentstyle=\color{OrangeRed},
+    stringstyle=\color{ForestGreen},
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{fondo},
+    frame=single,
+    rulecolor=\color{black},
+    breaklines=true,
+    columns=flexible,
+    inputencoding=utf8,
+    %morecomment=[s][\color{purple}]{/**}{*/},
+    %morecomment=[l][\color{orange}]{//},
+    literate={\#}{{\#}}1,
+}
+
+\begin{document}
+\title{Ejercicios 4: Árbol Binario Ordenado}
+\author{Ayudante: Cynthia Lizbeth Sánchez Urbano}
+\date{Ejercicios para repaso de árboles binarios ordenados.}
+\maketitle
+\end{document}
