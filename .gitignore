@@ -1,0 +1,18 @@
+# Archivos temporales y de salida de LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Archivos de respaldo
+*~
+*.bak
+
+# Archivos de configuración de editores comunes
+.vscode/
+*.swp
